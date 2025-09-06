@@ -77,7 +77,7 @@ except Exception as e:
 
 
 # School name after logo
-school_label_top = tk.Label(root, text="talanted tech school in Jeddah", font=("Arial", 26, "bold"), bg="#FFD700", fg="#8B0000")
+school_label_top = tk.Label(root, text="talanted tech high school in Jeddah", font=("Arial", 26, "bold"), bg="#FFD700", fg="#8B0000")
 school_label_top.pack(pady=10)  # English: school name displayed after logo
 
 # Title label
