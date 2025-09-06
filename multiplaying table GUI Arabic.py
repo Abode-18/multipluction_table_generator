@@ -6,6 +6,16 @@ from tkinter import messagebox, scrolledtext
 from PIL import Image, ImageTk
 import sys
 import os
+# an edit to make sure that the exe file would work
+def resource_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller exe"""
+    try:
+        base_path = sys._MEIPASS  # مكان الملفات داخل exe
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+
 
 #the process(function)
 def multiplaying_table():
@@ -53,7 +63,7 @@ root.configure(bg="#FFD700")  # English: set background color
 
 # Load logo with Pillow
 try:
-    image = Image.open("C:/Users/Abode/Documents/python projects/multiplaying table/school logo.png")  # يمكن PNG أو JPG
+    image = Image.open(resource_path("school logo.png"))  # يمكن PNG أو JPG
     image = image.resize((50,50))  # English: resize logo to fit GUI
     logo_img = ImageTk.PhotoImage(image)
     logo_label = tk.Label(root, image=logo_img, bg="#FFD700")
