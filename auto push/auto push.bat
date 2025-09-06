@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "C:\Users\Abode\Documents\python projects\multiplaying table\auto push\auto push.ps1"
