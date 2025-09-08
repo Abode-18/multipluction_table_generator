@@ -59,7 +59,7 @@ def multiplaying_table():
 
 # GUI setup
 root = tk.Tk()
-root.title("multipluction_Table_Generator")
+root.title("Multiplication_Table _Generator")
 root.geometry("1200x1920")  # English: set window size
 root.configure(bg="#FFD700")  # English: set background color
 
@@ -81,7 +81,7 @@ school_label_top = tk.Label(root, text="talanted tech high school in Jeddah", fo
 school_label_top.pack(pady=10)  # English: school name displayed after logo
 
 # Title label
-title_label = tk.Label(root, text="multipluction_Table_Generator", font=("Arial", 30, "bold"), bg="#FFD700", fg="#8B0000")
+title_label = tk.Label(root, text="Multiplication_Table _Generator", font=("Arial", 30, "bold"), bg="#FFD700", fg="#8B0000")
 title_label.pack(pady=20)  # English: add top padding
 
 # Input frame
