@@ -55,12 +55,12 @@ def multiplaying_table():
             output_text.insert(tk.END, f"{x} × {y} = {r}\n")  # English: insert result into text area
         output_text.insert(tk.END, "\n")  # English: add empty line between numbers
 
-BG_Color = "#FFD700"
+BG_Color = "#5495fd"
 # GUI setup
 root = tk.Tk()
 root.title("مولد جدول الضرب")
 root.geometry("1200x1920")  # English: set window size
-root.configure(bg= BG_Color)  # English: set background color
+root.configure(bg="#5495fd")  # English: set background color
 
 # Load logo with Pillow
 try:
